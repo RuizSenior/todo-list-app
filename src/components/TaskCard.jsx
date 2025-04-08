@@ -5,7 +5,7 @@ export default function TaskCard({ task }) {
   const { handleDeleteTask, toggleCompleteTask } = useContext(TaskContext);
 
   return (
-    <div className={`bg-gray-800 text-white p-4 rounded-lg shadow-md ${task.completed ? "opacity-60" : ""}`}>
+    <div className={`bg-gray-800 text-white p-4 rounded-xl shadow-lg border border-gray-700 hover:scale-[1.01] transition-transform duration-200" ${task.completed ? "opacity-60" : ""}`}>
       <h2 className={`text-3xl capitalize font-bold break-words ${task.completed ? "line-through" : ""}`}>
         {task.title}
       </h2>
@@ -29,4 +29,3 @@ export default function TaskCard({ task }) {
     </div>
   );
 }
-"bg-cyan-900 rounded-3xl px-2 py-1 mt-4 hover:bg-cyan-950 transition ease-linear"
