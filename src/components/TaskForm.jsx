@@ -11,7 +11,7 @@ function TaskForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title.trim() === "" || description.trim() === "") {
-      setError("Por favor completa el título y la descripción.");
+      setError("Please complete the title and description.");
       return;
     }
     handleAddTask({
